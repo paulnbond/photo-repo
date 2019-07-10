@@ -1,0 +1,21 @@
+{
+  "name": "svalbard",
+  "version": "1.0.0",
+  "description": "svalbard image uploader",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.4.13",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.1-alpha.3",
+    "image-size": "^0.7.2",
+    "sharp": "^0.21.3",
+    "underscore": "^1.9.1"
+  }
+}

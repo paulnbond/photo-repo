@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="app/css/style.css" rel="stylesheet">
+  <link rel="manifest" href="app/manifest.json">
+</head>
+<body>
+    <div class='top'>
+    </div>
+    <div id='fileList' class='fileList'></div>
+    <div id='fetchProgress' class='fetchProgress'>
+        <img alt='fetching...' src='app/images/progress.gif'>
+    </div>
+    <div class='largeImgContainer' id='largeImgContainer'>
+        <div class='largeImgMain'>
+            <div class='largeImg' id='largeImg'></div>
+            <div class='largeImgProgress' id='largeImgProgress'>
+                <img alt='fetching...' src='app/images/progress.gif'>
+            </div>
+            <img id='imgLoader' src=''>
+        </div>
+    </div>
+    <div class='addButton'>
+        <form ref='uploadForm' id='uploadForm' action='/upload' method='post' encType="multipart/form-data">
+            <input type="file" name="inputFiles" id="inputFiles" multiple accept="image/*"/>
+            <label for="inputFiles" id='uploadButton' title='Upload new images'>+</label>     
+        </form>
+        <form ref='downloadForm' id='downloadForm' action='/download-all' method='post' encType='multipart/form-data'>
+            <input type='submit' class='downloadButton' id='downloadButton' title='Download all images as zip' value=''>
+        </form>
+    </div>
+
+    <script src='app/index.js'></script>
+</body>
+</html>

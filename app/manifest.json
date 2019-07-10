@@ -1,0 +1,21 @@
+{
+    "name": "Claro Lingit Svalbard",
+    "short_name": "Svalbard",
+    "description": "Progressive Web App to allow Claro Software and Lingit employees to share photos from the 2019 Svalbard trip",
+    "icons": [
+        {
+            "src": "icons/claroRead_24.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/claroRead_128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
+}
